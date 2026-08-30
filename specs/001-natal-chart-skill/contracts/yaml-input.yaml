@@ -1,0 +1,50 @@
+# Contract: YAML structured birth data input for natal chart generation
+# Schema version: 1.0
+# Required fields: name, date_of_birth
+# Optional fields: time_of_birth, timezone, latitude, longitude
+
+---
+
+# Example valid — city-level precision
+example_valid:
+  name: "Bristol Ann Klok-Loomis"
+  date_of_birth: "2026-08-26"
+  time_of_birth: "22:02"
+  location:
+    city: "Chicago"
+    nation: "US"
+  timezone: "America/Chicago"
+
+# Example with coordinates — hospital-level precision
+example_with_coordinates:
+  name: "Aria Rose Heinsen"
+  date_of_birth: "2023-10-18"
+  time_of_birth: "12:33"
+  location:
+    address: "Bronson Methodist Hospital Room 310"
+    city: "Kalamazoo"
+    nation: "US"
+  latitude: 42.280825
+  longitude: -83.743037
+  timezone: "America/Detroit"
+
+# Example missing time — triggers house approximation warning
+example_missing_time:
+  name: "Example Child"
+  date_of_birth: "2025-06-15"
+  location:
+    city: "Portland"
+    nation: "US"
+
+---
+# Field type reference (for parsers consuming this format)
+field_types:
+  name: "string — full legal or common name, 1-80 characters"
+  date_of_birth: "string — YYYY-MM-DD format required"
+  time_of_birth: "string — HH:MM 24-hour format, or omitted/null"
+  location.city: "string — city name as recognized by geocoder lookup table"
+  location.address: "string — optional street/hospital name for precision"
+  location.nation: "string — ISO 3166-1 alpha-2 country code"
+  latitude: "number — decimal degrees, -90.0 to 90.0; resolved from city if omitted"
+  longitude: "number — decimal degrees, -180.0 to 180.0; resolved from city if omitted"
+  timezone: "string — IANA timezone identifier (e.g., America/Chicago); inferred if omitted"

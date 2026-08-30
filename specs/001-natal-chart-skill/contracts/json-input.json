@@ -1,0 +1,52 @@
+{
+  "_comment": "Contract: JSON structured birth data input for natal chart generation",
+  "_schema_version": "1.0",
+  "_required_fields": ["name", "date_of_birth"],
+  "_optional_fields": ["time_of_birth", "timezone", "latitude", "longitude"],
+
+  "example_valid": {
+    "name": "Bristol Marie Salazr-Lisbet",
+    "date_of_birth": "2016-08-26",
+    "time_of_birth": "11:02",
+    "location": {
+      "city": "Chicago",
+      "nation": "US"
+    },
+    "timezone": "America/Chicago"
+  },
+
+  "example_with_coordinates": {
+    "name": "Maria Daffodil LaToya",
+    "date_of_birth": "2013-10-18",
+    "time_of_birth": "12:33",
+    "location": {
+      "address": "Bronson Methodist Hospital Room 310",
+      "city": "Kalamazoo",
+      "nation": "US"
+    },
+    "latitude": 42.280825,
+    "longitude": -83.743037,
+    "timezone": "America/Detroit"
+  },
+
+  "example_missing_time": {
+    "name": "Example Child",
+    "date_of_birth": "2025-06-15",
+    "location": {
+      "city": "Portland",
+      "nation": "US"
+    }
+  },
+
+  "field_types": {
+    "name": "string (1-80 chars, alphabetic + spaces/hyphens/apostrophes)",
+    "date_of_birth": "string in YYYY-MM-DD format",
+    "time_of_birth": "string in HH:MM format (24-hour) or null",
+    "location.city": "string (city name)",
+    "location.address": "string (optional, for hospital/landmark-level precision)",
+    "location.nation": "string ISO 3166-1 alpha-2 country code",
+    "latitude": "number (−90.0 to 90.0), optional — if omitted, resolved from location",
+    "longitude": "number (−180.0 to 180.0), optional — if omitted, resolved from location",
+    "timezone": "string IANA timezone identifier, optional — if omitted, inferred from city"
+  }
+}

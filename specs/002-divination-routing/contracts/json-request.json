@@ -1,0 +1,56 @@
+{
+  "_comment": "Contract: Divination routing request input — JSON format",
+  "_schema_version": "1.0",
+  "_required_fields": ["divination_types"],
+
+  "example_single_gematria": {
+    "divination_types": ["gematria"],
+    "name": "John Smith"
+  },
+
+  "example_multi_gematria_numerology": {
+    "divination_types": ["gematria", "numerology"],
+    "name": "Jane Doe",
+    "date_of_birth": "1990-05-15",
+    "gematria_systems": ["english", "hebrew"],
+    "numerology_systems": ["pythagorean"]
+  },
+
+  "example_bazi_single": {
+    "divination_types": ["bazi"],
+    "name": "Bristol Ann Klok-Loomis",
+    "date_of_birth": "2026-08-26",
+    "time_of_birth": "22:02",
+    "location": {
+      "city": "Chicago",
+      "nation": "US"
+    },
+    "timezone": "America/Chicago"
+  },
+
+  "example_all_three": {
+    "divination_types": ["gematria", "numerology", "bazi"],
+    "name": "Alice Chen",
+    "date_of_birth": "1985-03-22",
+    "time_of_birth": "14:30",
+    "location": {
+      "city": "Portland",
+      "nation": "US"
+    },
+    "timezone": "America/Los_Angeles",
+    "gematria_systems": ["english"],
+    "numerology_systems": ["pythagorean", "chaldean"]
+  },
+
+  "field_types": {
+    "divination_types": "array of strings — each must be one of: 'gematria', 'bazi', 'numerology'. Max 3 types.",
+    "name": "string (1-80 chars, alphabetic + spaces/hyphens/apostrophes) — required for gematria and numerology",
+    "date_of_birth": "string YYYY-MM-DD — required for bazi and numerology. Must be ≤ today, ≥ 150 years in past.",
+    "time_of_birth": "string HH:MM (24-hour) or null — optional for gematria/numerology; triggers house warning for bazi if absent",
+    "location.city": "string — required for bazi. City name recognized by geocoder lookup table.",
+    "location.nation": "string ISO 3166-1 alpha-2 — recommended for bazi, inferred from city if omitted.",
+    "timezone": "string IANA identifier — optional for bazi; inferred from city lookup if absent.",
+    "gematria_systems": "array of strings — for gematria only. Supported: 'english', 'hebrew', 'simple'. Default: ['english']",
+    "numerology_systems": "array of strings — for numerology only. Supported: 'pythagorean', 'chaldean'. Default: ['pythagorean']"
+  }
+}

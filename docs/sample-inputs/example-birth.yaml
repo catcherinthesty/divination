@@ -1,0 +1,7 @@
+name: "Jane Doe"
+date_of_birth: "2024-03-15"
+time_of_birth: "14:30"
+location:
+  city: "Springfield"
+  nation: "US"
+timezone: "America/Chicago"

@@ -1,0 +1,64 @@
+name,latitude,longitude,nation,type,timezone
+Chicago,41.8780,-87.6298,US,city,America/Chicago
+New York,40.7128,-74.0060,US,city,America/New_York
+Los Angeles,34.0522,-118.2437,US,city,America/Los_Angeles
+Houston,29.7604,-95.3698,US,city,America/Chicago
+Phoenix,33.4484,-112.0740,US,city,America/Phoenix
+Philadelphia,39.9526,-75.1652,US,city,America/New_York
+San Antonio,29.4241,-98.4936,US,city,America/Chicago
+San Diego,32.7157,-117.1611,US,city,America/Los_Angeles
+Dallas,32.7767,-96.7970,US,city,America/Chicago
+Austin,30.2672,-97.7431,US,city,America/Chicago
+Jacksonville,30.3322,-81.6557,US,city,America/New_York
+San Francisco,37.7749,-122.4194,US,city,America/Los_Angeles
+Columbus,39.9612,-82.9988,US,city,America/New_York
+Charlotte,35.2271,-80.8431,US,city,America/New_York
+Indianapolis,39.7684,-86.1581,US,city,America/Indiana/Indianapolis
+Seattle,47.6062,-122.3321,US,city,America/Los_Angeles
+Denver,39.7392,-104.9903,US,city,America/Denver
+Boston,42.3601,-71.0589,US,city,America/New_York
+Nashville,36.1627,-86.7816,US,city,America/Chicago
+Detroit,42.3314,-83.0458,US,city,America/Detroit
+Portland,45.5152,-122.6784,US,city,America/Los_Angeles
+Las Vegas,36.1699,-115.1398,US,city,America/Los_Angeles
+Memphis,35.1495,-90.0490,US,city,America/Chicago
+Louisville,38.2527,-85.7585,US,city,America/Kentucky/Louisville
+Baltimore,39.2904,-76.6122,US,city,America/New_York
+Milwaukee,43.0389,-87.9065,US,city,America/Chicago
+Albuquerque,35.0844,-106.6504,US,city,America/Denver
+Tucson,32.2226,-110.9747,US,city,America/Phoenix
+Fresno,36.7378,-119.7871,US,city,America/Los_Angeles
+Sacramento,38.5816,-121.4944,US,city,America/Los_Angeles
+Kansas City,39.0997,-94.5786,US,city,America/Chicago
+Atlanta,33.7490,-84.3880,US,city,America/New_York
+Miami,25.7617,-80.1918,US,city,America/New_York
+Minneapolis,44.9778,-93.2650,US,city,America/Chicago
+Cincinnati,39.1031,-84.5120,US,city,America/New_York
+St. Louis,38.6270,-90.1994,US,city,America/Chicago
+New Orleans,29.9511,-90.0715,US,city,America/Chicago
+Cleveland,41.4993,-81.6944,US,city,America/New_York
+Omaha,41.2565,-95.9345,US,city,America/Chicago
+Tampa,27.9506,-82.4572,US,city,America/New_York
+Salt Lake City,40.7608,-111.8910,US,city,America/Denver
+Pittsburgh,40.4406,-79.9959,US,city,America/New_York
+Oklahoma City,35.4676,-97.5164,US,city,America/Chicago
+Orlando,28.5383,-81.3792,US,city,America/New_York
+Kalamazoo,42.2917,-85.5862,US,city,America/Detroit
+Bronson Methodist Hospital,42.280825,-83.743037,US,hospital,America/Detroit
+"Springfield, IL",39.7817,-89.6501,US,city,America/Chicago
+"Springfield, MA",42.1015,-72.5898,US,city,America/New_York
+"Springfield, MO",37.2151,-93.2983,US,city,America/Chicago
+"Springfield, OH",39.8697,-84.1571,US,city,America/New_York
+"Springfield, NE",31.2500,-92.1550,US,city,America/Chicago
+Paris,40.8144,-95.3698,US,city,America/Chicago
+Paris,48.8566,2.3522,FR,city,Europe/Paris
+Cedars-Sinai Medical Center,34.0686,-118.3772,US,hospital,America/Los_Angeles
+Massachusetts General Hospital,42.3619,-71.0745,US,hospital,America/New_York
+Johns Hopkins Hospital,39.2976,-76.5928,US,hospital,America/New_York
+Mount Sinai Medical Center,25.8163,-80.1394,US,hospital,America/New_York
+UCLA Medical Center,34.0673,-118.4430,US,hospital,America/Los_Angeles
+Mayo Clinic,44.0239,-92.4581,US,hospital,America/Chicago
+Cleveland Clinic,41.4640,-81.6750,US,hospital,America/New_York
+Texas Children's Hospital,29.7084,-95.3964,US,hospital,America/Chicago
+University of Michigan Hospital,42.2807,-83.7446,US,hospital,America/Detroit
+Rush University Medical Center,41.8734,-87.6685,US,hospital,America/Chicago

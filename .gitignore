@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+
+# Generated chart outputs (user-controlled, exclude from shared repos)
+*.svg
+*.html
+api_call.json
+interpretation.html
+
+# PII-sensitive generated files in root
+bakl_*.svg
+bakl_*.html
+arh_*.svg
+arh_*.html
+natal_*.svg
+natal_*.html
+*_numerology.json
+*_numerology.md
+*_bazi.json
+*_bazi.md
+*_gematria.json
+*_gematria.md
+*_gematria.svg
+*_gematria.html
+
+# Temp artifacts
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

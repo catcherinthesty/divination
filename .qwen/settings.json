@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "disabled": [
+      "adhd",
+      "esp32-firmware-engineer",
+      "find-skills",
+      "git-commit",
+      "gstack",
+      "home-assistant-best-practices",
+      "i-have-adhd",
+      "senior-prompt-engineer",
+      "take-a-break",
+      "batch",
+      "computer-use",
+      "coordinate",
+      "dataviz",
+      "extension-creator",
+      "goal-draft",
+      "loop",
+      "new-app",
+      "qc-helper",
+      "review",
+      "simplify",
+      "stuck"
+    ]
+  },
+  "$version": 4
+}

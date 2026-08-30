@@ -1,0 +1,4 @@
+name,date_of_birth,time_of_birth,location_city,location_address,location_nation,latitude,longitude,timezone
+Bristol Ann Klok-Loomis,2026-08-26,22:02,Chicago,,US,,,America/Chicago
+Aria Rose Heinsen,2023-10-18,12:33,Kalamazoo,"Bronson Methodist Hospital Room 310",US,42.280825,-83.743037,America/Detroit
+Example Child,2025-06-15,,,Portland,US,,,,

@@ -1,0 +1,11 @@
+{
+  "_comment": "Synthetic mock data for documentation purposes only. Do not use real personal information.",
+  "name": "Alice M. Chen",
+  "date_of_birth": "2023-11-08",
+  "time_of_birth": "06:45",
+  "location": {
+    "city": "Portland",
+    "nation": "US"
+  },
+  "timezone": "America/Los_Angeles"
+}
