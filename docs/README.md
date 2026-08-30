@@ -126,18 +126,6 @@ This skill is designed with privacy as a first-class concern:
 - **Example/mock data uses synthetic names** — all sample inputs in `docs/sample-inputs/` use randomized values (e.g., "Jane Doe") with fictional birth dates
 - **Generated chart files are excluded from git** — the `.gitignore` excludes `*.svg`, `*.html`, and `api_call.json` to prevent accidental PII commits
 
-### Before Publishing
-
-If you plan to push this repository to a public GitHub, ensure generated chart files are not committed:
-
-```bash
-# Check for any accidentally tracked chart files
-git ls-files | grep -E '\.(svg|html)$'
-
-# If found, untrack them (keep local copies)
-git rm --cached *.svg *.html
-```
-
 ## Repository Structure
 
 ```text
