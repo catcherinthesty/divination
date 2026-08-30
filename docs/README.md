@@ -1,4 +1,4 @@
-# Natal Chart Skill
+# Divination Skill
 
 A deterministic Python CLI tool that generates complete natal chart packages from birth data in multiple input formats.
 
